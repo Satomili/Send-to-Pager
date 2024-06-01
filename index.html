@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Send to Pager</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- ----------- font-family: "Press Start 2P", system-ui; ----------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+
+            <!-- --------- PAGER -------- -->
+            <section class="pager">
+                <h2>Pager</h2>
+                <div class="pager-display display" id="pager-display"></div>
+            </section>
+            
+            <!-- --------- PHONE -------- -->
+            <section class="phone">
+                <h2>Phone</h2>
+                <div class="phone-display display" id="phone-display"></div>
+                <div class="phone-number">
+                    <button onclick="pushNumber('1')">1</button>
+                    <button onclick="pushNumber('2')">2</button>
+                    <button onclick="pushNumber('3')">3</button>
+                    <button onclick="pushNumber('4')">4</button>
+                    <button onclick="pushNumber('5')">5</button>
+                    <button onclick="pushNumber('6')">6</button>
+                    <button onclick="pushNumber('7')">7</button>
+                    <button onclick="pushNumber('8')">8</button>
+                    <button onclick="pushNumber('9')">9</button>
+                    <button onclick="pushNumber('*')">*</button>
+                    <button onclick="pushNumber('0')">0</button>
+                    <button onclick="pushNumber('#')">#</button>
+                </div>
+                <button class="reset-btn" id="reset-btn">RESET</button>
+                <button class="send-btn" id="send-btn">SEND</button>
+            </section>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

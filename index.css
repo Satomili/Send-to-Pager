@@ -1,0 +1,130 @@
+/*
+COLOR PALETTE
+
+PAGER BACKGROUND: #283033
+PAGER DISPLAY: #9EC4B3
+PAGER DISPLAY TEXT COLOR: #000000
+
+PHONE BACKGROUND: #D9D9D9
+PHONE DISPLAY: #9EC4B3
+PHONE DISPLAY TEXT COLOR: #F8F8F8
+PHONE KEY: #F8F8F8
+
+RESET AND SEND BUTTON BORDER COLOR: #0B0B0B
+
+RESET BUTTON BACKGROUND: #BE482A
+RESET BUTTON TEXT COLOR: #F8F8F8
+
+SEND BUTTON BACKGROUND: #3D9C7C
+SEND BUTTON TEXT COLOR: #0B0B0B
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 30px;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 30px;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin: 0;
+}
+
+section {
+    padding: 30px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* --------- PAGER -------- */
+.pager {
+    background: #283033;
+    color: #F8F8F8;
+    margin-bottom: 50px;
+}
+
+.pager-display {
+    background: #9EC4B3;
+    color: #000000;
+    height: 70px;
+}
+
+/* --------- PHONE -------- */
+.phone {
+    background: #D9D9D9;
+    color: #000000;
+}
+
+.phone-display {
+    background: #444444;
+    color: #F8F8F8;
+    height: 70px;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+} 
+
+.phone-number {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, minmax(100px,1fr));
+    margin: 30px 0;
+}
+
+.phone-number button {
+    padding: 18px;
+}
+
+.reset-btn,
+.send-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.reset-btn {
+    background: #BE482A;
+    border: 3px solid #0B0B0B;
+    color: #F8F8F8;
+}
+
+.send-btn {
+    background: #3D9C7C;
+    border: 3px solid #0B0B0B;
+    margin-top: 15px;
+}
